@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hafza Shah — WordPress Developer & Graphic Designer</title>
+  <meta name="description" content="Hafza — WordPress & custom websites developer and graphic designer. Portfolio showcasing web and design work." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://via.placeholder.com/32" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Hafza Shah</a>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Assalamualaikum, main <span class="accent">Hafza</span> hoon</h1>
+          <p class="lead">WordPress & Custom Website Developer • Graphic Designer — I build beautiful and functional online experiences and visual identities.</p>
+          <div class="cta">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+          </div>
+          <div class="social" aria-hidden="true">
+            <a href="#" title="GitHub">GitHub</a>
+            <a href="#" title="LinkedIn">LinkedIn</a>
+            <a href="#" title="Behance">Behance</a>
+          </div>
+        </div>
+
+        <div class="hero-photo" aria-hidden="true">
+          <img src="https://via.placeholder.com/420x420?text=Your+Photo" alt="Portrait of Hafza" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="muted">Main yeh services provide karti hoon — WordPress se le kar branding tak.</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon" aria-hidden="true">🖥️</div>
+            <h3>WordPress Development</h3>
+            <p>Custom themes, Elementor, WooCommerce setup, performance & SEO friendly builds.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon" aria-hidden="true">💻</div>
+            <h3>Custom Websites</h3>
+            <p>Pixel-perfect static & dynamic sites built with HTML, CSS, JavaScript (React optionally).</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon" aria-hidden="true">🎨</div>
+            <h3>Graphic Design</h3>
+            <p>Logos, brand identity, social media posts, banners, UI mockups (Photoshop / Illustrator).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>Web</h4>
+            <ul>
+              <li>HTML5, CSS3, JavaScript (ES6+)</li>
+              <li>React (basic), Responsive design</li>
+              <li>Performance & Accessibility</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>WordPress</h4>
+            <ul>
+              <li>Custom Themes & Child Themes</li>
+              <li>Plugins, Elementor, WooCommerce</li>
+              <li>Site migrations & security</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Design</h4>
+            <ul>
+              <li>Adobe Photoshop & Illustrator</li>
+              <li>Branding, Logo Design</li>
+              <li>Social assets & UI mockups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="muted">Filter karke WordPress, Custom, ya Design projects dekhein.</p>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="wordpress">WordPress</button>
+          <button class="filter-btn" data-filter="custom">Custom</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project: WordPress -->
+          <article class="project-card" data-category="wordpress">
+            <img src="https://via.placeholder.com/600x360?text=WP+Shop" alt="WordPress shop screenshot" />
+            <div class="card-body">
+              <h3>WP E-commerce Store</h3>
+              <p>WooCommerce store with custom checkout and speed optimisation.</p>
+              <div class="card-actions">
+                <button class="btn-sm view-btn" data-id="proj-wp-1">View</button>
+                <a href="#" class="btn-sm btn-outline">Repo / Link</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project: Custom -->
+          <article class="project-card" data-category="custom">
+            <img src="https://via.placeholder.com/600x360?text=Custom+Landing" alt="Custom landing" />
+            <div class="card-body">
+              <h3>Product Landing Page</h3>
+              <p>Static landing with animations and A/B ready layout.</p>
+              <div class="card-actions">
+                <button class="btn-sm view-btn" data-id="proj-custom-1">View</button>
+                <a href="#" class="btn-sm btn-outline">Live</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project: Design -->
+          <article class="project-card" data-category="design">
+            <img src="https://via.placeholder.com/600x360?text=Brand+Kit" alt="Brand kit preview" />
+            <div class="card-body">
+              <h3>Brand Identity — Cafe</h3>
+              <p>Logo, colour palette, social templates and packaging mockups.</p>
+              <div class="card-actions">
+                <button class="btn-sm view-btn" data-id="proj-design-1">View</button>
+                <a href="#" class="btn-sm btn-outline">Behance</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- More placeholder projects -->
+          <article class="project-card" data-category="wordpress">
+            <img src="https://via.placeholder.com/600x360?text=WP+Blog" alt="WordPress blog" />
+            <div class="card-body">
+              <h3>Blog / Magazine Theme</h3>
+              <p>Custom theme with custom widgets and pagination.</p>
+              <div class="card-actions">
+                <button class="btn-sm view-btn" data-id="proj-wp-2">View</button>
+                <a href="#" class="btn-sm btn-outline">Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2>About Me</h2>
+          <p>Main ek full-stack-ish front-end focused developer & graphic designer hoon. WordPress pe kaam karti hoon, custom HTML/CSS/JS projects banati hoon, aur clients ke liye visual identity design karti hoon. Meri approach: Design + Usability + Clean Code.</p>
+          <p class="muted">Location: Karachi, Pakistan • Available for remote & on-site work</p>
+          <div class="cta" style="margin-top:1rem;">
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#" class="btn btn-outline">Download CV</a>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div><strong>4+</strong><span>Years Experience</span></div>
+          <div><strong>30+</strong><span>Projects</span></div>
+          <div><strong>100%</strong><span>Client Satisfaction</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <form id="contact-form" class="contact-form" novalidate>
+          <h2>Contact</h2>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" id="name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" id="email" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+            <button type="button" id="mailto-fallback" class="btn btn-outline">Open Email Client</button>
+          </div>
+          <p id="form-msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          <p>Phone: +92 300 0000000 (optional)</p>
+          <p>Freelance, Full-time & Contract work welcome.</p>
+          <div class="cv">
+            <a href="#" class="btn-sm">Download CV</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Hafza Shah — WordPress Developer & Graphic Designer</p>
+        <nav class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+
+  <!-- PROJECT MODAL (hidden by default) -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content" role="document">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div id="modal-body">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
